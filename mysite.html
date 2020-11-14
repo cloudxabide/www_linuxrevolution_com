@@ -28,9 +28,25 @@ For an overview of my HomeLab, visit <A HREF="https://github.com/cloudxabide/mat
 
 <BR>
 <BR>
-This webpage was built by running...
-<div class="code">
+This webpage was built the following... <BR>
+<UL>
+<LI>Create a Git Repo (https://github.com/cloudxabide/www_linuxrevolution_com <BR>
+<LI>Update the repo using code from an example S2I (source to image) webpage build. <BR>
+<LI>Clone repo to local host (this is where I will make updates) <BR>
+<LI>Create project in OpenShift using the repo as teh source <BR>
+<LI>Retrieve "secret" from project for GitHub <BR>
+<LI>Create the webhook in my Git Repo using the payload and secret retrieved from OpenShift project<BR>
+<LI>Make an update to this repo and push to GitHub.  <BR>
+<LI>Watch the Webhook config page for status <BR>
+</UL>
 
+<H3> Clone Repo locally </H3>
+<div class="code">
+git clone git@github.com:cloudxabide/www_linuxrevolution_com.git
+</div>
+
+<H3> Create Project in OpenShift </H3>
+<div class="code">
 MYPROJ="welcomepage" <BR>
 oc new-project $MYPROJ --description="Welcome Page" --display-name="LinuxRevolution Welcome Page" <BR>
 oc new-app httpd~https://github.com/cloudxabide/www_linuxrevolution_com/ <BR>
@@ -39,7 +55,9 @@ echo '{ "kind": "List", "apiVersion": "v1", "metadata": {}, "items": [ { "kind":
 </div>
 
 <BR>
+<H3> Update code locally and push Code</H3>
 This site is (manually) updated by running...
+add/commit/push to GitHub
 <div class="code">
 git add index.html; git commit -m "Some message here" index.html; git push
 </div>

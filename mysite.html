@@ -42,7 +42,8 @@ This webpage was built the following... <BR>
 
 <H3> Clone Repo locally </H3>
 <div class="code">
-git clone git@github.com:cloudxabide/www_linuxrevolution_com.git
+git clone git@github.com:cloudxabide/www_linuxrevolution_com.git<BR>
+cd www_linuxrevolution_com
 </div>
 
 <H3> Create Project in OpenShift </H3>
@@ -55,7 +56,12 @@ echo '{ "kind": "List", "apiVersion": "v1", "metadata": {}, "items": [ { "kind":
 </div>
 
 <BR>
-<H3> Update code locally and push Code</H3>
+<H3>Create webhook for your Git Repo</H3>
+This page is currently created as a container once I "push" my content to GitHub using a webhook<BR>
+<A HREF="https://github.com/cloudxabide/Foo/webhooks_github.md">https://github.com/cloudxabide/Foo/webhooks_github.md</A>
+<BR>
+
+<H3> Update code locally and push to GitHub</H3>
 This site is (manually) updated by running...
 add/commit/push to GitHub
 <div class="code">
@@ -63,8 +69,6 @@ git add index.html; git commit -m "Some message here" index.html; git push
 </div>
 
 <BR>
-This page is currently created as a container once I "push" my content to GitHub using a webhook
-https://github.com/cloudxabide/Foo/webhooks_github.md
 
 <align=center>
 <include src="./footer.html"></include>

@@ -7,3 +7,4 @@ This repo was created to build the container to host https://www.linuxrevolution
 $ oc new-app centos/httpd-24-centos7~https://github.com/cloudxabide/www_linuxrevolution_com/
 ```
 
+Update the Copyleft year to 2021

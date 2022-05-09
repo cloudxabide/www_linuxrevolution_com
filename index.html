@@ -5,9 +5,27 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <LINK REL="stylesheet" HREF="./styles.css" TYPE="text/css">
+  <LINK REL="stylesheet" HREF="./particles.css" TYPE="text/css">
+
 </HEAD>
 
 <BODY>
+<div id="particles-js"></div>
+<script src="assets/js/particles.js"></script>
+<script> 
+  particlesJS.load('particles-js', 'assets/js/particles.json', function() {
+    console.log('particles.json config loaded');
+  });
+
+  $(function () {
+    $(document).scroll(function () {
+      var $nav = $(".navbar.fixed-top");
+      $nav.toggleClass('scrolled', $(this).scrollTop() > 0);
+      // $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+  });
+</script>
+
 <IMG SRC="./images/LinuxRevolution_RedGradient.png" align=center width=800>
 <BR>
 <BR>

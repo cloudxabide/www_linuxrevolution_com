@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Welcome | LinuxRevolution &#169 2022</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <LINK REL="stylesheet" HREF="./styles.css" TYPE="text/css">
+  <LINK REL="stylesheet" HREF="./particles.css" TYPE="text/css">
+
+</HEAD>
+
+<BODY>
+<div id="particles-js"></div>
+<script src="assets/js/particles.js"></script>
+<script> 
+  particlesJS.load('particles-js', 'assets/js/particles.json', function() {
+    console.log('particles.json config loaded');
+  });
+
+  $(function () {
+    $(document).scroll(function () {
+      var $nav = $(".navbar.fixed-top");
+      $nav.toggleClass('scrolled', $(this).scrollTop() > 0);
+      // $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+  });
+</script>
+<BR>
+<div class="content">
+<IMG SRC="./images/LinuxRevolution_RedGradient.png" align=center width=800>
+<BR>
+<BR>
+<span class="regPara">
+Welcome to LinuxRevolution.com<BR>
+<BR>
+<BR>
+<BR>
+So, you have undoubtedly found this page by an invite to use MATRIXLAB.
+
+You should review <A HREF="https://github.com/cloudxabide/matrix.lab/blob/main/getting_started.md">Matrix.lab - Getting Started</A> <BR>
+
+<section class='container'>
+<hgroup>
+  <footer>
+    <div class="logo"><a href="https://www.openshift.com/"></a></div>
+  </footer>
+</section>
+
+<hr width=400>
+<align=center>
+<script language="Javascript">
+document.write("This page was last modified on: " + document.lastModified +"");
+</SCRIPT>
+
+</div>
+
+</BODY>
+</HTML>
